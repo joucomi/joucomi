@@ -1,0 +1,432 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  color: #1a1a1a;
+  background: #f5f5f5;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Side Panel Root ─────────────────────────── */
+.sidepanel-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #fff;
+}
+
+/* ─── Header ──────────────────────────────────── */
+.sidepanel-header {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  background: #1e1e2e;
+  color: #fff;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.tab-nav {
+  display: flex;
+  gap: 2px;
+  flex: 1;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.tab-btn.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* ─── Main Content ────────────────────────────── */
+.sidepanel-main {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Apps Tab ────────────────────────────────── */
+.apps-layout {
+  display: flex;
+  height: 100%;
+}
+
+/* ─── App Launcher (left icon strip) ─────────── */
+.app-launcher {
+  width: 52px;
+  background: #1e1e2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0;
+  gap: 4px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.app-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  flex-shrink: 0;
+  title-tooltip: attr(title);
+}
+
+.app-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.app-icon-btn.selected {
+  border-color: #7c6bff;
+  background: rgba(124, 107, 255, 0.2);
+}
+
+/* ─── App Frame ───────────────────────────────── */
+.app-frame-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.app-frame-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  background: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  flex-shrink: 0;
+}
+
+.app-frame-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.open-tab-btn {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 11px;
+  padding: 2px 6px;
+  cursor: pointer;
+  color: #555;
+}
+
+.open-tab-btn:hover {
+  background: #e8e8e8;
+}
+
+.app-iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+}
+
+.no-app-selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: #888;
+  font-size: 13px;
+}
+
+/* ─── Focus Toggle ────────────────────────────── */
+.focus-toggle-btn {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #aaa;
+  font-size: 11px;
+  padding: 3px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.focus-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.focus-toggle-btn.enabled {
+  border-color: #7c6bff;
+  color: #b8afff;
+  background: rgba(124, 107, 255, 0.15);
+}
+
+/* ─── Pomodoro Timer ──────────────────────────── */
+.pomodoro-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.pomodoro-phase {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7c6bff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pomodoro-time {
+  font-size: 48px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #1a1a1a;
+  letter-spacing: 2px;
+}
+
+.pomodoro-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.pomodoro-btn {
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.pomodoro-btn:hover {
+  opacity: 0.85;
+}
+
+.pomodoro-btn.primary {
+  background: #7c6bff;
+  color: #fff;
+}
+
+.pomodoro-btn.secondary {
+  background: #e8e8e8;
+  color: #555;
+}
+
+/* ─── Focus Tab ───────────────────────────────── */
+.focus-tab {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.focus-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #7c6bff;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/* ─── Calendar Panel ──────────────────────────── */
+.calendar-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.calendar-connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex: 1;
+  padding: 24px;
+  text-align: center;
+}
+
+.calendar-connect h3 {
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+.calendar-connect p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.connect-btn {
+  background: #7c6bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.connect-btn:hover {
+  opacity: 0.85;
+}
+
+.connect-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+.calendar-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.calendar-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.icon-btn {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #555;
+}
+
+.icon-btn:hover {
+  background: #f0f0f0;
+}
+
+.events-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.event-card {
+  background: #f9f9ff;
+  border: 1px solid #e0dcff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.event-time {
+  font-size: 11px;
+  color: #7c6bff;
+  font-weight: 600;
+}
+
+.event-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.event-join-btn {
+  align-self: flex-start;
+  background: #7c6bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 11px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.event-join-btn:hover {
+  opacity: 0.85;
+}
+
+.no-events {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: #888;
+  font-size: 13px;
+  text-align: center;
+  padding: 24px;
+}
+
+.error-msg {
+  color: #e55;
+  font-size: 12px;
+  padding: 8px 12px;
+}
