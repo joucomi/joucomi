@@ -25,6 +25,30 @@ chrome.runtime.onStartup.addListener(async () => {
 // Alarm handler
 chrome.alarms.onAlarm.addListener(handleAlarm);
 
+// Re-apply focus rules when the sidebar app list or blocklist changes while
+// Focus Mode is active, so newly added sidebar apps are exempted from the
+// sub-frame block (and removed ones are re-blocked) without a toggle.
+chrome.storage.onChanged.addListener((changes, areaName) => {
+  if (areaName !== "local") return;
+
+  const appsChanged = "apps" in changes;
+  // Only react to a real blocklist edit — enableFocusMode() itself writes
+  // focusSettings back, so reacting to every focusSettings write would loop.
+  const focusChange = changes["focusSettings"];
+  const blocklistChanged =
+    !!focusChange &&
+    JSON.stringify(focusChange.oldValue?.blocklist) !==
+      JSON.stringify(focusChange.newValue?.blocklist);
+
+  if (!appsChanged && !blocklistChanged) return;
+
+  getStorage("focusSettings").then((focusSettings) => {
+    if (focusSettings.enabled) {
+      enableFocusMode().catch(console.error);
+    }
+  });
+});
+
 // Notification button click handler
 chrome.notifications.onButtonClicked.addListener((notificationId, buttonIndex) => {
   if (notificationId.startsWith("reminder:") && buttonIndex === 0) {

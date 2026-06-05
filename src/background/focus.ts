@@ -6,12 +6,43 @@ function blockedPageUrl(): string {
   return chrome.runtime.getURL("src/blocked/index.html");
 }
 
+/**
+ * Extract the bare host (no scheme, port, or path) from an app URL.
+ * Returns null for URLs that cannot be parsed.
+ */
+function hostFromUrl(url: string): string | null {
+  try {
+    return new URL(url).hostname;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * A blocked domain matches a sidebar app when the app's host equals the domain
+ * or is a sub-domain of it (e.g. blocklist "x.com" matches app host
+ * "mobile.x.com"). Such domains are blocked only in the main frame so the
+ * deliberately-added sidebar app keeps loading inside the side panel iframe.
+ */
+function isSidebarAppDomain(domain: string, appHosts: string[]): boolean {
+  return appHosts.some(
+    (host) => host === domain || host.endsWith(`.${domain}`)
+  );
+}
+
 export async function enableFocusMode(): Promise<void> {
   const focusSettings = await getStorage("focusSettings");
   const blocklist = focusSettings.blocklist;
+  const apps = await getStorage("apps");
+
+  const appHosts = apps
+    .map((app) => hostFromUrl(app.url))
+    .filter((host): host is string => host !== null);
 
   // Remove existing dynamic focus rules
   await clearFocusRules();
+
+  const { MAIN_FRAME, SUB_FRAME } = chrome.declarativeNetRequest.ResourceType;
 
   const rules: chrome.declarativeNetRequest.Rule[] = blocklist.map(
     (domain, index) => ({
@@ -23,10 +54,11 @@ export async function enableFocusMode(): Promise<void> {
       },
       condition: {
         urlFilter: `||${domain}`,
-        resourceTypes: [
-          chrome.declarativeNetRequest.ResourceType.MAIN_FRAME,
-          chrome.declarativeNetRequest.ResourceType.SUB_FRAME,
-        ],
+        // Sites you've deliberately added to the sidebar are only blocked in
+        // the main frame, so they still load inside the side panel iframe.
+        resourceTypes: isSidebarAppDomain(domain, appHosts)
+          ? [MAIN_FRAME]
+          : [MAIN_FRAME, SUB_FRAME],
       },
     })
   );

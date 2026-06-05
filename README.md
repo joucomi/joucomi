@@ -1,5 +1,7 @@
 # Joucomi Sidekick
 
+> Inspired by the [Sidekick Browser](https://www.meetsidekick.com/), which was sunset on August 3rd, 2025.
+
 A Chrome extension (Manifest V3) that recreates key features of the discontinued **Sidekick Browser**:
 
 - **Sidebar Apps** — A vertical icon strip lets you load Gmail, Google Calendar, Slack, Notion, and more inside the browser's native side panel. Add/remove/reorder apps in Options.
