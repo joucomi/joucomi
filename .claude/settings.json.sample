@@ -1,0 +1,17 @@
+{
+  "//": "Auto-checkpoint hook. To ACTIVATE: copy this file to .claude/settings.json",
+  "//2": "Runs .claude/hooks/checkpoint.sh after every turn to snapshot WIP to GitHub.",
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR/.claude/hooks/checkpoint.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}
