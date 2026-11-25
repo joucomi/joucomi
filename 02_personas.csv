@@ -1,0 +1,106 @@
+id,first_name,last_name,city,state,occupation,interests,bio
+001,Maria,Gonzalez,San Antonio,TX,Pediatric Nurse,"salsa dancing, gardening",Night-shift nurse. Day-shift plant mom.
+002,James,Whitaker,Billings,MT,Cattle Rancher,"fly fishing, country music, woodworking","Fourth-generation rancher. Big sky, small talk."
+003,Aisha,Johnson,Atlanta,GA,Civil Rights Attorney,"jazz, marathons","Lawyer by day, marathoner by dawn."
+004,Kevin,Nguyen,San Jose,CA,Software Engineer,"mechanical keyboards, pho, bouldering",Writing code and climbing walls in the Bay.
+005,Dorothy,Hanson,Bemidji,MN,Retired Librarian,"knitting, mystery novels, birding",Retired librarian. Still shushing people.
+006,Marcus,Bell,Detroit,MI,Auto Assembly Technician,"classic cars, Motown, grilling",Built in Detroit. Literally. I build cars.
+007,Priya,Raman,Edison,NJ,Pharmacist,"Bollywood, yoga, baking",Pharmacist who bakes better than she dances.
+008,Tyler,Brooks,Boise,ID,Wildland Firefighter,"backcountry skiing, trail running","Fighting fires, chasing powder."
+009,Linda,Kowalski,Scranton,PA,Elementary School Teacher,"crafting, bingo, true crime",3rd grade teacher. Glitter is everywhere.
+010,Jamal,Washington,Baltimore,MD,Barber,"boxing, vinyl records, chess",Fresh fades and bad chess openings.
+011,Emily,Chen,Seattle,WA,UX Designer,"ceramics, indie games",Designing calm interfaces for loud times.
+012,Robert,McAllister,Charleston,SC,Shrimp Boat Captain,"deep sea fishing, bluegrass","Up before the sun, out on the water."
+013,Sofia,Ramirez,Phoenix,AZ,Real Estate Agent,"pilates, interior design, wine",Helping Phoenix families find home.
+014,Daniel,O'Brien,Boston,MA,Union Electrician,"Red Sox, Irish music, home brewing",Wiring Boston one triple-decker at a time.
+015,Grace,Kim,Los Angeles,CA,Korean BBQ Restaurant Owner,"K-dramas, golf",Feeding K-town since 2009.
+016,Hector,Morales,El Paso,TX,Border Patrol Agent,"lowriders, boxing, family BBQs",Proud dad of three. Lowrider in progress.
+017,Hannah,Schmidt,Milwaukee,WI,Brewery Marketing Manager,"craft beer, polka, kayaking",Marketing beer in Brew City. Tough job.
+018,Malik,Thompson,Houston,TX,Petroleum Engineer,"fantasy football, smoked brisket","Engineer, deacon, fantasy league champ."
+019,Rebecca,Goldstein,Brooklyn,NY,Freelance Copywriter,"crosswords, bagels, podcasts",Words for hire. Crosswords for free.
+020,Ethan,Parker,Nashville,TN,Session Guitarist,"songwriting, vintage guitars",Played on records you didn't know you liked.
+021,Ava,Martinez,Albuquerque,NM,Hot Air Balloon Pilot,"photography, green chile",Flying high over the Land of Enchantment.
+022,William,Carter,Lexington,KY,Horse Trainer,"horse racing, bourbon","Thoroughbreds, bourbon, and early mornings."
+023,Mei,Lin,Flushing,NY,Dim Sum Chef,"mahjong, tai chi",Dumplings folded with 30 years of love.
+024,Brandon,Lee,Honolulu,HI,Surf Instructor,"surfing, ukulele, spearfishing",Teaching tourists to fall off boards.
+025,Patricia,Wilson,Jackson,MS,Church Choir Director,"gospel, quilting, sweet tea",Making joyful noise every Sunday.
+026,Carlos,Herrera,Miami,FL,Cruise Ship Engineer,"dominoes, Cuban coffee",Keeping ships afloat and cafecito strong.
+027,Olivia,Bennett,Portland,OR,Zero-Waste Shop Owner,"composting, thrift shopping, tarot","Refill, reuse, repeat. Small shop, big heart."
+028,Thomas,Yazzie,Window Rock,AZ,Tribal Health Educator,"silversmithing, rodeo",Diné educator. Health is tradition.
+029,Jessica,Miller,Columbus,OH,Insurance Claims Adjuster,"Buckeyes football, Peloton",Claims adjuster. O-H-I-O forever.
+030,Andre,Dubois,New Orleans,LA,Jazz Trumpeter,"second lines, Creole cooking",Blowing horn on Frenchmen Street nightly.
+031,Samantha,Reed,Denver,CO,Physical Therapist,"rock climbing, dogs","Helping Denver move better, one knee at a time."
+032,Rajesh,Patel,Dallas,TX,Motel Owner,"cricket, stock market",Motel owner. Cricket fan. Proud Texan.
+033,Megan,O'Connor,Burlington,VT,Maple Syrup Farmer,"snowshoeing, folk music",Tapping trees and keeping it sweet.
+034,Darnell,Jackson,Chicago,IL,CTA Bus Driver,"deep dish, blues, Bulls",Driving the 66 Chicago since '98.
+035,Chloe,Anderson,Austin,TX,Startup Founder,"productivity, tacos, ATX music",Building things. Breaking things. Tacos.
+036,Frank,Russo,Providence,RI,Retired Mailman,"bocce, Italian cooking",Delivered mail 35 years. Now I deliver meatballs.
+037,Leilani,Kahale,Hilo,HI,Marine Biologist,"reef conservation, hula","Protecting reefs, one dive at a time."
+038,Joshua,Stewart,Little Rock,AR,Youth Pastor,"basketball, worship music",Youth pastor. Bad at TikTok dances.
+039,Nicole,Turner,Charlotte,NC,Bank Compliance Officer,"half marathons, brunch",Compliance pro. Brunch enthusiast.
+040,Gregory,Foster,Anchorage,AK,Bush Pilot,"ice fishing, aviation history",Flying where roads don't go.
+041,Isabella,Rossi,Philadelphia,PA,Art History PhD Student,"museums, espresso",Overthinking Renaissance paintings daily.
+042,Tyrone,Davis,Memphis,TN,BBQ Pitmaster,"dry rub, soul music",Low and slow. Memphis style. No sauce needed.
+043,Kaitlyn,Murphy,Omaha,NE,Corn Seed Sales Rep,"volleyball, country concerts",Selling seeds across the Heartland.
+044,Wei,Zhang,Pittsburgh,PA,Robotics Researcher,"Go, hiking, sci-fi",Teaching robots to pick up socks.
+045,Shirley,Adams,Sarasota,FL,Retired Accountant,"pickleball, cruises, bridge",Retired CPA. Pickleball is my new tax season.
+046,Diego,Castillo,Fresno,CA,Almond Farmer,"soccer, mariachi",Third-gen farmer in the Central Valley.
+047,Ashley,Price,Tulsa,OK,Dental Hygienist,"makeup, country line dancing",Floss daily. Line dance weekly.
+048,Benjamin,Cohen,Washington,DC,Policy Analyst,"podcasts, cycling, politics",Policy nerd. Opinions are my own.
+049,Fatima,Hassan,Dearborn,MI,Middle School Science Teacher,"astronomy, calligraphy",Teaching kids why the sky is blue.
+050,Cody,Walker,Cheyenne,WY,Oil Rig Roughneck,"hunting, monster trucks","Two weeks on, two weeks off. Wyoming made."
+051,Lauren,Hughes,Savannah,GA,Wedding Planner,"vintage fashion, floristry","Planning your best day, Southern style."
+052,Michael,Okafor,Minneapolis,MN,ER Physician,"afrobeats, soccer, cooking",ER doc. Jollof rice defender.
+053,Brittany,Collins,Knoxville,TN,Hairstylist,"Dolly Parton, thrifting","Big hair, bigger heart. Knoxville stylist."
+054,Steven,Park,Irvine,CA,Orthodontist,"golf, wine tasting",Straightening smiles in Orange County.
+055,Rosa,Delgado,Tucson,AZ,Home Health Aide,"telenovelas, gardening, church",Caring for others is my calling.
+056,Nathan,Clark,Des Moines,IA,Agricultural Economist,"data viz, Hawkeyes",Crunching numbers on corn and soy.
+057,Jasmine,Brown,Oakland,CA,Community Organizer,"poetry, mural art, activism",Organizing for a better Oakland.
+058,Harold,Jenkins,Asheville,NC,Retired Pilot,"model trains, hiking",Flew 747s. Now I fly model trains.
+059,Amanda,Foster,Indianapolis,IN,IndyCar Mechanic,"racing, tailgating",Pit crew life. 200 mph or bust.
+060,Jorge,Sanchez,Salinas,CA,Farmworker Union Rep,"norteño music, carne asada",Fighting for fair wages in the fields.
+061,Kayla,Roberts,Fargo,ND,Veterinary Technician,"horses, snowmobiling",Vet tech. Animals > people (sorry).
+062,Christopher,Moore,Richmond,VA,Civil War Tour Guide,"history, reenactments",History buff giving tours in Richmond.
+063,Yuki,Tanaka,Sacramento,CA,Bonsai Nursery Owner,"bonsai, tea ceremony",Patience grown one tiny tree at a time.
+064,Derek,Hall,Louisville,KY,Bourbon Distiller,"bourbon, basketball",Making bourbon the old Kentucky way.
+065,Natalie,Wright,Madison,WI,Dairy Scientist,"cheese, cross-country skiing","Cheese scientist. Yes, that's a real job."
+066,Anthony,Ricci,Staten Island,NY,NYC Firefighter,"weightlifting, Italian food",FDNY. Brotherhood forever.
+067,Tiffany,Green,Birmingham,AL,Hospital Administrator,"Crimson Tide, book club",Roll Tide. Running a hospital on coffee.
+068,Ryan,Sullivan,Bozeman,MT,Fly Fishing Guide,"fly tying, elk hunting",Fly fishing guide on the Gallatin.
+069,Lucia,Fernandez,Las Vegas,NV,Casino Dealer,"poker, zumba",Dealing cards on the Strip since 2012.
+070,Jacob,Peterson,Salt Lake City,UT,Ski Patroller,"skiing, avalanche science",Keeping Utah slopes safe. Powder addict.
+071,Keisha,Robinson,Paterson,NJ,Social Worker,"R&B, self-care",Social worker. Advocate. Protect your peace.
+072,Paul,Lindqvist,Juneau,AK,Commercial Fisherman,"salmon, carpentry",Salmon season is my whole personality.
+073,Victoria,Lopez,Corpus Christi,TX,Marine Insurance Broker,"sailing, Tejano music",Insuring boats and sailing them too.
+074,Eric,Johansson,St. Paul,MN,Hockey Coach,"ice hockey, lake cabins",Youth hockey coach. Skate hard.
+075,Monica,Alvarez,Santa Fe,NM,Ceramic Artist,"pottery, desert hikes",Making pots inspired by the desert.
+076,Henry,Thompson,Burlington,IA,Hardware Store Owner,"fishing, small-town history",Hardware store owner. Ask me anything.
+077,Zoe,Mitchell,Olympia,WA,Indie Musician,"synths, thrift shopping",Bedroom pop from a tiny Brooklyn room.
+078,Samuel,Ortiz,San Juan,PR,Coffee Roaster,"salsa, baseball",Roasting Puerto Rican coffee with pride.
+079,Ruth,Abernathy,Topeka,KS,Retired Farmer,"canning, church potlucks",Seventy years on the farm. Still canning.
+080,Aaron,Feldman,Ann Arbor,MI,University Professor,"chess, philosophy",Professor of philosophy. Questioning everything.
+081,Destiny,Harris,Shreveport,LA,Gospel Singer,"choir, fashion",Singing for the Lord and the stage.
+082,Trevor,King,Spokane,WA,Logging Truck Driver,"hunting, country radio",Hauling logs across the Inland Northwest.
+083,Angela,Russo,Hartford,CT,Insurance Actuary,"data, Italian cooking",Actuary who loves numbers and pasta.
+084,Luis,Vargas,Bakersfield,CA,Oilfield Welder,"motocross, cumbia","Welding pipes, riding dirt bikes."
+085,Erin,Gallagher,Cleveland,OH,Rock Radio DJ,"classic rock, vinyl",Spinning rock in Cleveland every morning.
+086,Dwayne,Simmons,Norfolk,VA,Navy Chief Petty Officer,"fitness, spades",20 years Navy. Spades champion.
+087,Jenna,Larson,Sioux Falls,SD,Small Business Accountant,"scrapbooking, softball","Bookkeeper by day, softball by night."
+088,Isaac,Mendez,Kansas City,MO,Graphic Designer,"street art, KC BBQ",Designing logos and eating burnt ends.
+089,Peggy,Sullivan,Bar Harbor,ME,Lobster Shack Owner,"lobster, sea glass",Best lobster roll in Maine. Fight me.
+090,Omar,Farouk,Arlington,VA,Cybersecurity Analyst,"CTF, falafel",Hunting hackers so you don't have to.
+091,Heather,Bishop,Lancaster,PA,Quilt Shop Owner,"quilting, farmers markets",Stitching stories into every quilt.
+092,Jordan,Ellis,Atlanta,GA,Hip-Hop Producer,"beats, sneakers",Making beats in the ATL. Stay tuned.
+093,Margaret,Doyle,Newport,RI,Sailing Instructor,"regattas, lighthouses",Teaching kids to sail in Newport.
+094,Kenji,Watanabe,Torrance,CA,Aerospace Engineer,"model rockets, ramen","Rockets by day, ramen by night."
+095,Crystal,Hayes,Charleston,WV,Rural Nurse Practitioner,"country music, whitewater rafting",Proud West Virginian. Almost heaven.
+096,Adrian,Cruz,San Diego,CA,Marine Corps Veteran,"surfing, tattoos",Semper Fi. Now chasing waves.
+097,Bethany,Morgan,Greenville,SC,Christian Bookstore Clerk,"Bible study, baking","Faith, family, and fresh cookies."
+098,Gabriel,Santos,Newark,NJ,Portuguese Bakery Owner,"fado, futsal",Pastéis de nata made fresh daily.
+099,Holly,Pearson,Montpelier,VT,Dairy Goat Farmer,"cheesemaking, banjo",Goat farmer making cheese with love.
+100,Raymond,Chavez,Pueblo,CO,Steel Mill Worker,"green chile, lowriders",Steel mill worker. Pueblo proud.
+101,Tanya,Wallace,Mobile,AL,Mardi Gras Float Designer,"parades, costume design",Building floats for Mobile Mardi Gras.
+102,Lucas,Bergström,Duluth,MN,Great Lakes Ship Captain,"maritime history, saunas",Captaining freighters on Lake Superior.
+103,Naomi,Jacobs,Princeton,NJ,Neuroscientist,"piano, sleep science",Studying brains. Ironically sleep-deprived.
+104,Elijah,Young,Raleigh,NC,High School Football Coach,"football, grilling",Coaching boys to men on Friday nights.
+105,Esperanza,Reyes,Reno,NV,Nursing Student,"true crime podcasts, boba",Driving Uber to pay for nursing school.
